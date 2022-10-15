@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat&display=swap');
+
+:root {
+	--marrom: #452a31;
+	--azul: #0073ab;
+	--azul-claro: #2ea2d0;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+button {
+	cursor: pointer;
+}
+.backBanner-1 {
+	width: 100%;
+	position: absolute;
+	z-index: 0;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 60px 100px;
+	font-family: Montserrat;
+}
+
+header a {
+	color: #fff;
+	padding: 10px 20px;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+header nav {
+	display: flex;
+	width: 60%;
+	justify-content: space-between;
+}
+
+.secaoApresentacao {
+	display: flex;
+	font-family: 'Amatic SC';
+}
+
+.secaoApresentacao img {
+	position: absolute;
+	width: 700px;
+	margin-top: 150px;
+	left: 0px;
+}
+.secaoApresentacao {
+	display: flex;
+	justify-content: center;
+}
+
+.alinhamentoBalao {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.textoApresentacao {
+	display: flex;
+	flex-direction: column;
+	font-size: 60px;
+	align-items: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	color: var(--marrom);
+}
+.textoApresentacao strong {
+	color: var(--azul);
+	font-weight: bolder;
+}
+
+.balaoBanner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 700px;
+	height: 375px;
+	background-image: url('/assets/topo/balao.png');
+	background-size: cover;
+	margin-left: -20px;
+	margin-top: 40px;
+}
+
+.balaoBanner h1 {
+	transform: rotate(-20deg);
+	font-size: 70px;
+	margin-top: -30px;
+	color: var(--azul);
+}
+
+.nossaHistoria {
+	display: flex;
+	margin-top: 200px;
+	align-items: center;
+	justify-content: flex-end;
+	font-family: Montserrat;
+	margin-bottom: 100px;
+}
+
+.cao-1 {
+	position: absolute;
+	top: 10px;
+	width: 600px;
+	left: 0px;
+	z-index: 1;
+}
+.nossaHistoria h2 {
+	line-height: 55px;
+}
+.nossaMarrom {
+	font-size: 60px;
+	color: var(--marrom);
+	font-weight: bolder;
+}
+.historiaazul {
+	font-size: 100px;
+	color: var(--azul-claro);
+	font-weight: bolder;
+}
+
+.descHistoria {
+	width: 30%;
+	font-size: 30px;
+	color: #6c6c6c;
+	margin-left: 50px;
+	margin-right: 5%;
+}
+
+.descHistoria a {
+	display: flex;
+	color: var(--azul-claro);
+	font-size: 20px;
+	font-weight: bolder;
+	padding-top: 50px;
+}
+.secaoFrango {
+	background-image: url('/assets/historia/bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-family: 'Amatic SC';
+	width: 100%;
+	padding: 100px 0px;
+}
+
+.secaoFrango h2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 70px;
+	font-weight: bolder;
+	margin-bottom: 30px;
+}
+
+.frangoTextoMenor {
+	font-size: 40px;
+	letter-spacing: 8px;
+}
+
+.frangoTextoMaior {
+	font-size: 90px;
+}
+
+.secaoFrango p {
+	font-size: 25px;
+	font-family: Montserrat;
+	width: 50%;
+	text-align: center;
+	margin-top: 30px;
+	font-weight: 700;
+	opacity: 0.7;
+}
+
+.secaoVidaPerfeita {
+	width: 50%;
+}
+
+.secaoVidaPerfeita h2 {
+	font-family: 'Amatic SC';
+	font-size: 90px;
+	padding-bottom: 30px;
+	color: var(--marrom);
+}
+
+.secaoVidaPerfeita p {
+	font-family: Montserrat;
+	font-size: 30px;
+	font-weight: 600;
+	padding-bottom: 60px;
+}
+.secaoVidaPerfeita button {
+	border: none;
+	font-family: Montserrat;
+	font-size: 30px;
+	padding: 20px 30px;
+	background-color: var(--azul-claro);
+	color: #fff;
+	font-weight: 600;
+}
+.breeds {
+	display: flex;
+	flex-direction: column;
+	padding: 100px 0px;
+	width: 30%;
+}
+
+.tituloBreeds {
+	font-family: 'Amatic SC';
+	color: var(--marrom);
+	font-size: 60px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.breeds label {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: #969696 solid 2px;
+	margin-bottom: 60px;
+	width: 90%;
+}
+
+.breeds input {
+	font-family: Montserrat;
+	font-size: 25px;
+	padding: 20px 0px;
+	border: none;
+	background-color: transparent;
+	font-weight: 700;
+	outline: none;
+}
+
+.botaoBreeds {
+	border: none;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: bolder;
+	background-color: var(--azul-claro);
+	color: #fff;
+	padding: 20px 0px;
+	width: 190px;
+}
+.longo {
+	width: 300px;
+}
+
+.breeds p {
+	font-family: Montserrat;
+	font-size: 25px;
+	padding-bottom: 60px;
+	color: #5a5a5a;
+}
+.breedsRow {
+	display: flex;
+	align-items: center;
+	width: 70%;
+	margin: 200px auto;
+}
+.breedsRow p {
+	font-family: Montserrat;
+	font-size: 25px;
+	padding-bottom: 60px;
+	color: #5a5a5a;
+}
+
+footer {
+	margin-top: 700px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+footer nav {
+	display: flex;
+	flex-direction: column;
+}
+
+footer nav div {
+	display: flex;
+}
+
+footer a {
+	display: flex;
+	color: var(--marrom);
+	font-family: Montserrat;
+	font-size: 25px;
+	font-weight: bolder;
+	padding: 20px 30px;
+}
+
+footer p {
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: bolder;
+	padding: 20px 30px;
+}
+
+address img {
+	padding: 0px 10px;
+	width: 50px;
+}
