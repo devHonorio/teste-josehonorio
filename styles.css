@@ -68,7 +68,7 @@ header nav {
 	font-family: 'Amatic SC';
 }
 
-.secaoApresentacao img {
+.racao {
 	position: absolute;
 	width: 35vw;
 	margin-top: 150px;
@@ -80,10 +80,6 @@ header nav {
 }
 
 .alinhamentoBalao {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 }
 
 .textoApresentacao {
@@ -91,8 +87,6 @@ header nav {
 	flex-direction: column;
 	font-size: 60px;
 	align-items: center;
-	margin-bottom: 30px;
-	margin-top: 30px;
 	color: var(--marrom);
 }
 .textoApresentacao strong {
@@ -101,15 +95,8 @@ header nav {
 }
 
 .balaoBanner {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 700px;
-	height: 375px;
-	background-image: url('/assets/topo/balao.png');
-	background-size: cover;
-	margin-left: -20px;
-	margin-top: 40px;
+	width: 40vw;
+	padding-top: 5%;
 }
 
 .balaoBanner h1 {
@@ -226,8 +213,19 @@ header nav {
 	opacity: 0.7;
 }
 
+.alinhamentoVidaPerfeita {
+	display: flex;
+	justify-content: center;
+	padding: 5%;
+}
+
 .secaoVidaPerfeita {
 	width: 50%;
+}
+.cao-2 {
+	margin: auto 0;
+	width: 25%;
+	min-width: 300px;
 }
 
 .secaoVidaPerfeita h2 {
@@ -331,7 +329,12 @@ header nav {
 	display: flex;
 	align-items: center;
 	width: 70%;
-	margin: 200px auto;
+	margin: 10% auto;
+	flex-direction: row-reverse;
+}
+.racao-3 {
+	width: 60%;
+	min-width: 300px;
 }
 .breedsRow p {
 	font-family: Montserrat;
@@ -345,7 +348,7 @@ footer {
 	align-items: flex-end;
 	justify-content: flex-end;
 	margin: 3%;
-	background-image: url('/assets/historia/cao-footer.jpg');
+	background-image: url('assets/historia/cao-footer.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: calc(100vw - 60vw);
@@ -385,15 +388,26 @@ address img {
 	.backBanner-1 {
 		display: none;
 	}
+	header {
+		padding: 5%;
+	}
 	header nav a {
 		color: #000;
 	}
-	.secaoApresentacao img {
+	.racao {
+		position: relative;
+		margin: 5%;
+	}
+	.balaoBanner {
 		display: none;
+		position: static;
 	}
 
 	.secaoApresentacao {
 		background-image: url('assets/topo/banner.jpg');
+
+		flex-direction: column-reverse;
+		align-items: center;
 	}
 
 	.cao-1 {
@@ -411,6 +425,10 @@ address img {
 		position: static;
 		padding: 50px;
 	}
+	.racao-2 {
+		margin-left: auto;
+		margin-right: 5%;
+	}
 
 	.secaoFrango p {
 		width: 80%;
@@ -422,5 +440,28 @@ address img {
 
 	.secaoVidaPerfeita {
 		margin-right: 0;
+	}
+	.secaoVidaPerfeita h2 {
+		font-size: 60px;
+	}
+	.breedsRow {
+		flex-direction: column;
+	}
+	.racao-3 {
+		display: none;
+		margin-left: auto;
+	}
+}
+
+@media (max-width: 650px) {
+	header {
+		flex-wrap: nowrap;
+	}
+	.menu-resp {
+		width: 50px;
+		height: 2px;
+		background-color: var(--marrom);
+	}
+	.menu-resp::after {
 	}
 }
