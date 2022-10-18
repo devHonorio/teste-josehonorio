@@ -258,6 +258,13 @@ header nav {
 	background-color: var(--azul);
 }
 
+.container-breeds {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #f0f0f0;
+}
+
 .breeds {
 	display: flex;
 	flex-direction: column;
@@ -527,5 +534,25 @@ address img {
 	}
 	.secaoVidaPerfeita button {
 		font-size: 20px;
+	}
+	.container-breeds {
+		flex-direction: column;
+	}
+
+	.tituloBreeds {
+		font-size: 40px;
+	}
+	.breeds {
+		width: 90%;
+	}
+
+	.breeds input {
+		font-size: 20px;
+		margin: 0px;
+		padding: 4px;
+		width: 100%;
+	}
+	.breeds label {
+		width: 100%;
 	}
 }
