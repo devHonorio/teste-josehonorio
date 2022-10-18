@@ -4,10 +4,16 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+
 		<link rel="stylesheet" href="styles.css" />
+
 		<title>Teste - José Honorio</title>
 	</head>
-	<body>
+	<body onresize="resetarMenu()">
 		<img
 			class="backBanner-1"
 			src="assets/topo/banner.jpg"
@@ -16,14 +22,13 @@
 		<header>
 			<img src="assets/topo/logo.png" alt="Logo da empresa Company Name" />
 
-			<nav>
-				<a href="#">SHOP FOR DOG</a>
-				<a href="#">SHOP FOR CAT</a>
-				<a href="#">OUR STORY</a>
-				<a href="#">CONTACT US</a>
+			<span class="material-icons" onclick="menuClick()">menu</span>
+			<nav class="nav">
+				<a class="menu-a" href="#">SHOP FOR DOG</a>
+				<a class="menu-a" href="#">SHOP FOR CAT</a>
+				<a class="menu-a" href="#">OUR STORY</a>
+				<a class="menu-a" href="#">CONTACT US</a>
 			</nav>
-
-			<div class="menu-resp"></div>
 		</header>
 
 		<section class="secaoApresentacao">
@@ -206,4 +211,5 @@
 			</address>
 		</footer>
 	</body>
+	<script src="script.js"></script>
 </html>

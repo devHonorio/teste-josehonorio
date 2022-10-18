@@ -20,6 +20,9 @@ a {
 button {
 	cursor: pointer;
 }
+.material-icons {
+	display: none;
+}
 .backBanner-1 {
 	width: 100%;
 	position: absolute;
@@ -77,9 +80,6 @@ header nav {
 .secaoApresentacao {
 	display: flex;
 	justify-content: center;
-}
-
-.alinhamentoBalao {
 }
 
 .textoApresentacao {
@@ -462,6 +462,70 @@ address img {
 		height: 2px;
 		background-color: var(--marrom);
 	}
-	.menu-resp::after {
+	.material-icons {
+		display: flex;
+		cursor: pointer;
+	}
+
+	header nav {
+		flex-direction: column;
+		align-items: flex-end;
+		position: absolute;
+		right: 0;
+		z-index: 2;
+		top: 0;
+		background-color: #fff;
+		width: 100vw;
+	}
+	.nav {
+		display: none;
+		margin-top: 60px;
+	}
+
+	.menu-a {
+		display: block;
+		margin: 0 auto;
+	}
+
+	header img {
+		margin-right: auto;
+	}
+
+	.secaoApresentacao h1 {
+		font-size: 40px;
+	}
+
+	.nossaMarrom {
+		font-size: 30px;
+	}
+	.historiaazul {
+		font-size: 60px;
+	}
+	.nossaHistoria h2 {
+		line-height: 35px;
+	}
+	.descHistoria .p {
+		font-size: 20px;
+	}
+
+	.frangoTextoMenor {
+		font-size: 20px;
+		letter-spacing: 5px;
+	}
+
+	.frangoTextoMaior {
+		font-size: 60px;
+	}
+	.secaoFrango h2 {
+		line-height: 35px;
+	}
+	.cao-2 {
+		display: none;
+	}
+	.secaoVidaPerfeita {
+		width: 90%;
+	}
+	.secaoVidaPerfeita button {
+		font-size: 20px;
 	}
 }
